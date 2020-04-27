@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8099
+ADD target/hello-world-rest-api.jar hello-world-rest-api.jar
+ENTRYPOINT ["java", "-jar", "hello-world-rest-api.jar"]
